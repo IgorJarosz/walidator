@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Walidator siema</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src1="server.js" defer></script>
+</head>
+
+<body>
+    <h1>siema</h1>
+    <form method="post" action="/">
+        <label>IMIE: <input type="text" id="imie" required></label><br>
+        <label>NAZWISKO: <input type="text" id="nazwisko" required></label><br>
+        <label>WIEK: <input type="number" id="wiek"></label><br>
+        <label>EMAIL: <input type="email" id="email" required></label><br>
+        <label>PESEL: <input type="number" id="pesel" required></label><br>
+        <label>PŁEĆ: <select id="plec" required>
+                <option value="k">
+                    Kobieta
+                </option>
+                <option value="m">
+                    Mezczyzna
+                </option>
+                <option value="o">
+                    Wole nie podawac
+                </option>
+            </select></label><br>
+        <label>TELEFON: <input type="number" id="nrtel" required></label><br>
+        <label>KLASA: <input type="text" id="klasa"></label><br>
+        <label>TYTUŁ KSIĄŻKI: <input type="text" id="tytul" required></label><br>
+        <label>WYDAWCA: <input type="text" id="wydawca" required></label><br>
+        <label>ISBN: <input type="text" id="isbn" required></label><br>
+        <label>NR EWID: <input type="text" id="nrewid" required></label><br>
+        <label>UWAGI: <textarea id="uwagi"></textarea></label><br>
+        <input type="submit" id="submit" value="wyslij">
+    </form>
+    <div id="errorDiv"></div>
+</body>
+
+</html>
